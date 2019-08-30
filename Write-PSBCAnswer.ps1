@@ -1,2 +1,2 @@
 ﻿# PowerShell Brain Candy
-$j = 0; foreach($i in (1..9)) { $j = $j*10+$i; write-host "$(" "*(9-$i))$j x 8 + $i = $($j*8+$i)" }
+$j = 0; foreach($i in (1..9)) { $j = $j*10+$i; write-host "$(" "*(9-$i))$j x " -backgroundcolor white -foregroundcolor black -nonewline; write-host "8" -backgroundcolor white -foregroundcolor red -nonewline; write-host " + $i = $($j*8+$i)$(" "*(9-$i))" -backgroundcolor white -foregroundcolor black }
